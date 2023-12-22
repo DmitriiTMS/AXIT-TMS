@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 /* font-family: 'Raleway', sans-serif; */
 body {
   font-family: "Open Sans", sans-serif;
