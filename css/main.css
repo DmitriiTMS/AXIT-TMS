@@ -220,3 +220,50 @@ body {
 }
 
 /* baner finish */
+
+/* socials start */
+.socials {
+  background: #f8efef;
+  padding: 18px 0;
+}
+.socials-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px 10px;
+}
+
+.socials-content {
+  max-width: 470px;
+}
+
+.socials-content__title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.socials-content__text {
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.socails-list {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.socails-list__item {
+  transition: transform 0.5s ease;
+}
+
+.socails-list__item:hover {
+  transform: translateY(-6px);
+}
+
+/* socials finish */
