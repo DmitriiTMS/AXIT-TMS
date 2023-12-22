@@ -27,6 +27,8 @@ ol {
 /* font-family: 'Raleway', sans-serif; */
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
@@ -49,7 +51,6 @@ body {
 
 .header-logo {
   max-width: 86px;
-  max-height: 30px;
 }
 
 .header-logo__img {
@@ -61,7 +62,7 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 0 62px;
+  gap: 42px 62px;
 }
 
 .nav-list__item-link {
@@ -70,5 +71,152 @@ body {
   font-weight: 600;
   text-transform: capitalize;
 }
-
 /* header finish */
+
+/* baner start */
+
+.baner {
+  position: relative;
+  background: url("/assets/images/baner/baner-bg.jpg") 0 0 / cover no-repeat;
+  padding-top: 207px;
+  padding-bottom: 185px;
+}
+
+.baner::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+.baner-logo {
+  max-width: 170px;
+  margin-bottom: 72px;
+}
+
+.baner-logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.baner-title {
+  position: relative;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 670px;
+  margin-bottom: 97px;
+}
+
+.baner-title::after {
+  content: "";
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+  width: 170px;
+  height: 1px;
+  background: #fff;
+}
+
+.baner-text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 270px;
+  margin-bottom: 42px;
+}
+
+.baner-download {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 270px;
+  padding: 16px 0;
+  border: 2px solid #fff;
+  transition: all 0.4s ease;
+}
+
+.baner-download:hover {
+  background: #ab4949;
+  border: 2px solid #ab4949;
+}
+
+.baner-form-block {
+  flex: 0 1 470px;
+}
+
+.baner-form {
+  text-align: center;
+}
+
+.baner-form__inner-top {
+  padding: 30px 50px 0;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.baner-form__title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 74px;
+}
+
+.baner-form__title span {
+  color: #ec7979;
+}
+
+.baner-form__inner-input {
+  max-width: 370px;
+  margin-bottom: 36px;
+}
+
+.baner-form__inner-input:last-child {
+  margin-bottom: 0;
+  padding-bottom: 78px;
+}
+
+.baner-form__input {
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 0 6px 16px;
+}
+
+.baner-form__input::placeholder {
+  color: #bdbdbd;
+}
+
+.baner-form__btn {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  background: #ec7979;
+  border: none;
+  outline: none;
+  padding: 22px 0;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+}
+
+/* baner finish */
