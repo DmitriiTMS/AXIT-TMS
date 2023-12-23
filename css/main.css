@@ -62,6 +62,22 @@ body {
   font-weight: 400;
 }
 
+.btn-inner {
+  max-width: 270px;
+}
+
+.btn-section {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 16px 0;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -116,7 +132,7 @@ body {
   position: relative;
   background: url("/assets/images/baner/baner-bg.jpg") center no-repeat;
   background-size: cover;
-  padding-top: 207px;
+  padding-top: 230px;
   padding-bottom: 185px;
 }
 
@@ -179,20 +195,11 @@ body {
   margin-bottom: 42px;
 }
 
-.baner-download {
-  display: inline-block;
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: capitalize;
-  width: 270px;
-  padding: 16px 0;
+.baner-btn {
   border: 2px solid #fff;
-  transition: all 0.4s ease;
 }
 
-.baner-download:hover {
+.baner-btn:hover {
   background: #ab4949;
   border: 2px solid #ab4949;
 }
@@ -255,6 +262,11 @@ body {
   padding: 22px 0;
   cursor: pointer;
   border-radius: 0 0 10px 10px;
+  transition: all 0.4s ease;
+}
+
+.baner-form__btn:hover {
+  background: #AB4949;
 }
 
 /* baner finish */
@@ -293,7 +305,7 @@ body {
 .socails-list {
   display: flex;
   align-items: center;
-  gap: 0 30px;
+  gap: 0 48px;
 }
 
 .socails-list__item {
@@ -519,13 +531,65 @@ body {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  border: 1px solid #86878B;
+  border: 1px solid #86878b;
   background: transparent;
 }
 .reviews__swiper-pagination .swiper-pagination-bullet-active {
-  background: #86878B;
+  background: #86878b;
 }
 
-
-
 /* reviews finish */
+
+/* design start */
+.design {
+  position: relative;
+  background: url("/assets/images/design/design-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.design::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.design-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.design-text,
+.design-title {
+  color: inherit;
+}
+
+.design-title::after {
+  background: #fff;
+}
+
+.design-text {
+  margin-bottom: 73px;
+}
+
+.design__btn-inner {
+  margin: 0 auto;
+  max-width: 370px;
+}
+
+.design-btn {
+  border: 2px solid #fff;
+}
+
+.design-btn:hover {
+  background: #ab4949;
+  border: 2px solid #ab4949;
+}
+/* design finish */
