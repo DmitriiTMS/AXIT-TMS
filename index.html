@@ -27,19 +27,19 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-list__item">
-                <a class="nav-list__item-link" href="#">Features</a>
+                <a class="nav-list__item-link" href="#features">Features</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__item-link" href="#">About</a>
+                <a class="nav-list__item-link" href="#about">About</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__item-link" href="#">Pricing</a>
+                <a class="nav-list__item-link" href="#price">Pricing</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__item-link" href="#">Reviews</a>
+                <a class="nav-list__item-link" href="#reviews">Reviews</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__item-link" href="#">Contact</a>
+                <a class="nav-list__item-link" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -84,6 +84,7 @@
                     class="baner-form__input"
                     type="text"
                     placeholder="Name"
+                    name="name"
                   />
                 </div>
                 <div class="baner-form__inner-input">
@@ -91,6 +92,7 @@
                     class="baner-form__input"
                     type="email"
                     placeholder="Email"
+                    name="email"
                   />
                 </div>
                 <div class="baner-form__inner-input">
@@ -98,6 +100,7 @@
                     class="baner-form__input"
                     type="password"
                     placeholder="Password"
+                    name="password"
                   />
                 </div>
               </div>
@@ -108,7 +111,7 @@
       </div>
     </section>
 
-    <div class="socials">
+    <div id="features" class="socials">
       <div class="container">
         <div class="socials-inner">
           <div class="socials-content">
@@ -187,7 +190,7 @@
       </div>
     </div>
 
-    <section class="awesome">
+    <section id="about" class="awesome">
       <div class="container">
         <h2 class="section-title">WHY THIS IS AWESOME</h2>
         <p class="section-text">
@@ -244,7 +247,7 @@
       </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
       <div class="container">
         <h2 class="section-title">pricing options</h2>
         <p class="section-text">
@@ -295,7 +298,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <h2 class="section-title">what our customers are saying</h2>
         <p class="section-text">
@@ -416,7 +419,8 @@
         <div class="design-inner">
           <h2 class="section-title design-title">STYLISH AXURE DESIGN</h2>
           <p class="section-text design-text">
-            Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
           </p>
           <div class="btn-inner design__btn-inner">
             <a
@@ -427,6 +431,34 @@
             >
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">contact us</h2>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-form__inner">
+            <div class="contact-form__inner-input contact-form__input-name">
+              <input class="contact-form__input" type="text" placeholder="Name" name="name">
+            </div>
+            <div class="contact-form__inner-input contact-form__input-email">
+              <input class="contact-form__input" type="email" placeholder="Email" name="email">
+            </div>
+            <div class="contact-form__inner-input contact-form__input-password">
+              <input class="contact-form__input" type="password" placeholder="Password" name="password">
+            </div>
+            <div class="contact-form__inner-textarea contact-form__input-textarea">
+              <textarea class="contact-form__textarea" placeholder="Message" name="content"></textarea>
+            </div>
+          </div>
+          <div class="btn-inner contact__inner-btn">
+            <button class="btn-section contact__form-btn" type="submit">Send Message</button>
+          </div>
+        </form>
       </div>
     </section>
 
