@@ -139,7 +139,7 @@ body {
 
 .baner {
   position: relative;
-  background: url("/assets/images/baner/baner-bg.jpg") center no-repeat;
+  background: url("../assets/images/baner/baner-bg.jpg") center no-repeat;
   background-size: cover;
   padding-top: 230px;
   padding-bottom: 185px;
@@ -688,7 +688,7 @@ body {
 /* design start */
 .design {
   position: relative;
-  background: url("/assets/images/design/design-bg.jpg") center no-repeat;
+  background: url("../assets/images/design/design-bg.jpg") center no-repeat;
   background-size: cover;
   padding-top: 104px;
   padding-bottom: 50px;
