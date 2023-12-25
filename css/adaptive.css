@@ -1,0 +1,212 @@
+@media (max-width: 1024px) {
+  .baner {
+    padding-top: 140px;
+    padding-bottom: 109px;
+  }
+  .baner-logo {
+    max-width: 112px;
+    margin-bottom: 54px;
+  }
+
+  .baner-title {
+    font-size: 36px;
+    max-width: 454px;
+    margin-bottom: 74px;
+  }
+
+  .baner-title::after {
+    bottom: -41px;
+    width: 115px;
+  }
+
+  .baner-text {
+    font-size: 14px;
+    max-width: 183px;
+    margin-bottom: 32px;
+  }
+
+  .baner__btn-inner {
+    max-width: 183px;
+  }
+
+  .baner-btn {
+    padding: 10px 0;
+  }
+  .baner-form-block {
+    flex: 0 1 398px;
+  }
+
+  .baner-form__title {
+    font-size: 18px;
+  }
+
+  .socails-list {
+    gap: 0 22px;
+  }
+
+  .socials-content__title {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+
+  .socials-content__text {
+    font-size: 14px;
+  }
+
+  .socails-list__item-img {
+    width: 62px;
+    height: 49px;
+  }
+}
+
+@media (max-width: 850px) {
+  .baner-title {
+    max-width: 300px;
+  }
+
+  .socials-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 66px;
+  }
+
+  .socails-list {
+    gap: 0 15px;
+  }
+
+  .socials-content {
+    text-align: center;
+  }
+
+  .socails-list__item-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+  }
+  .header-logo {
+    position: relative;
+    z-index: 5;
+  }
+  .nav {
+    position: fixed;
+    top: -22px;
+    right: -15px;
+    z-index: 4;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    transform: translateX(0);
+  }
+  .nav-list {
+    flex-direction: column;
+    background: #000;
+    padding: 114px 138px;
+  }
+  .header-burger {
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+  .header-burger__btn-open,
+  .header-burger__btn-close {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .banner-inner {
+    flex-wrap: wrap;
+    gap: 56px 40px;
+    justify-content: center;
+  }
+  .baner-content {
+    max-width: 320px;
+    text-align: center;
+  }
+  .baner-logo {
+    display: none;
+  }
+
+  .baner-title,
+  .baner-text,
+  .baner__btn-inner {
+    max-width: 100%;
+  }
+
+  .baner-title::after {
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .baner {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 18px 0;
+  }
+  .header-logo {
+    width: 67px;
+    height: 25px;
+  }
+  .nav {
+    width: 107%;
+  }
+
+  .nav-list {
+    padding: 114px 0;
+  }
+
+  .baner-form__inner-top {
+    padding: 30px 16px 0;
+  }
+  .baner-form__title {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .baner {
+    padding-top: 143px;
+  }
+  .baner-title {
+    margin-bottom: 87px;
+  }
+  .baner-title::after {
+    width: 133px;
+    bottom: -45px;
+  }
+  .baner-text {
+    margin-bottom: 43px;
+  }
+  .baner-form__inner-top {
+    padding: 36px 23px 0;
+  }
+
+  .baner-form__title {
+    margin-bottom: 36px;
+  }
+
+  .baner-form__input {
+    padding: 0 0 16px;
+  }
+
+  .baner-form__inner-input:last-child {
+    padding-bottom: 52px;
+  }
+
+  .socials {
+    padding: 42px 0;
+  }
+}

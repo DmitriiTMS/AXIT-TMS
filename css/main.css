@@ -30,6 +30,7 @@ html {
 
 /* font-family: 'Raleway', sans-serif; */
 body {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -126,6 +127,10 @@ body {
 
 .nav-list__item-link:hover {
   color: #ab4949;
+}
+
+.header-burger {
+  display: none;
 }
 
 /* header finish */
@@ -377,7 +382,7 @@ body {
   justify-content: space-between;
   /* height: 500px; */
   min-height: 500px;
-  max-height: 550px;
+  max-height: 500px;
 }
 
 .tabs__item-content {
@@ -830,3 +835,7 @@ body {
   font-weight: 400;
 }
 /* footer finish */
+
+.none {
+  display: none;
+}
