@@ -30,6 +30,7 @@ html {
 
 /* font-family: 'Raleway', sans-serif; */
 body {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -126,6 +127,10 @@ body {
 
 .nav-list__item-link:hover {
   color: #ab4949;
+}
+
+.header-burger {
+  display: none;
 }
 
 /* header finish */
@@ -351,13 +356,13 @@ body {
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   background: #fff;
-  border: none;
-  transition: background 0.5s ease;
+  border: transparent;
+  transition: all 1.5s ease;
 }
 
-.tabs__nav-btn:hover {
+/* .tabs__nav-btn:hover {
   background: #c6cbcd;
-}
+} */
 
 .tabs__nav-btn.active {
   color: #333;
@@ -366,18 +371,27 @@ body {
   border-right: 1px solid #c6cbcd;
 }
 
+/* .tabs__content {
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
+} */
+
 .tabs__item {
   display: none;
   opacity: 1;
-  animation: tabsAnimate 2.5s ease normal;
+  animation: tabsAnimate 1.5s ease normal;
 }
 
-.tabs-inner {
+.tabs-item__inner {
   display: flex;
   justify-content: space-between;
-  /* height: 500px; */
   min-height: 500px;
-  max-height: 550px;
+  max-height: 500px;
+}
+
+.tabs__item {
+  height: inherit;
 }
 
 .tabs__item-content {
@@ -404,17 +418,13 @@ body {
 }
 
 .tabs__item-text-inner {
-  margin-bottom: 27px;
-  max-height: 220px;
-  overflow-y: auto;
-}
-
-.tabs__item-text-top,
-.tabs__item-text-bottom {
   color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 27px;
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .tabs__item-text-top {
@@ -643,6 +653,8 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
+  width: 234px;
+  word-wrap: break-word;
 }
 
 .reviews-content__text-job {
@@ -650,8 +662,9 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  width: 130px;
   word-wrap: break-word;
-  width: 270px;
+  
 }
 
 .reviews-swiper {
@@ -728,8 +741,8 @@ body {
 
 /* contact start */
 .contact {
-  margin-top: 104px;
-  margin-bottom: 50px;
+  padding-top: 104px;
+  padding-bottom: 50px;
 }
 
 .contact-form {
@@ -830,3 +843,7 @@ body {
   font-weight: 400;
 }
 /* footer finish */
+
+.none {
+  display: none;
+}
