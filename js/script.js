@@ -1,7 +1,7 @@
 const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
 const tabsItems = document.querySelectorAll(".tabs__item");
 
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 const btnBurgerOpen = document.querySelector(".header-burger__btn-open");
 const btnBurgerClose = document.querySelector(".header-burger__btn-close");
 const navigateHeader = document.querySelector(".nav");
@@ -32,14 +32,14 @@ const openBurger = () => {
   btnBurgerOpen.classList.add("none");
   btnBurgerClose.classList.remove("none");
   navigateHeader.classList.add("open");
-  body.style.overflow = 'hidden';
+  body.style.overflow = "hidden";
 };
 
 const closeBurger = () => {
   btnBurgerClose.classList.add("none");
   btnBurgerOpen.classList.remove("none");
   navigateHeader.classList.remove("open");
-  body.style.overflow = 'auto';
+  body.style.overflow = "auto";
 };
 
 btnBurgerOpen.addEventListener("click", openBurger);
@@ -47,10 +47,22 @@ btnBurgerClose.addEventListener("click", closeBurger);
 
 const swiper = new Swiper(".reviews-swiper", {
   loop: true,
-  slidesPerView: 3,
+  // slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: ".reviews__swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 3,
+    },
   },
 });
