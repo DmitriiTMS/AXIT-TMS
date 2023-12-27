@@ -2,8 +2,9 @@ const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
 const tabsItems = document.querySelectorAll(".tabs__item");
 
 const body = document.querySelector("body");
-const btnBurgerOpen = document.querySelector(".header-burger__btn-open");
-const btnBurgerClose = document.querySelector(".header-burger__btn-close");
+const headerBurgerBtn = document.querySelector(".header-burger__btn-open");
+const imgBurgerOpen = document.querySelector(".header-burger__img-open");
+const imgBurgerClose = document.querySelector(".header-burger__img-close");
 const navigateHeader = document.querySelector(".nav");
 
 tabsBtn.forEach(onTabClick);
@@ -28,22 +29,23 @@ function onTabClick(currentBtn) {
   });
 }
 
-const openBurger = () => {
-  btnBurgerOpen.classList.add("none");
-  btnBurgerClose.classList.remove("none");
-  navigateHeader.classList.add("open");
-  body.style.overflow = "hidden";
+const openCloseBurgerMenu = (e) => {
+  const imgTag = e.target;
+  if (!imgTag.classList.contains("none")) {
+    imgBurgerOpen.classList.add("none");
+    imgBurgerClose.classList.remove("none");
+    navigateHeader.classList.add("open");
+    body.style.overflow = "hidden";
+  }
+  if (!imgTag.classList.contains("none")) {
+    imgBurgerOpen.classList.remove("none");
+    imgBurgerClose.classList.add("none");
+    navigateHeader.classList.remove("open");
+    body.style.overflow = "auto";
+  }
 };
 
-const closeBurger = () => {
-  btnBurgerClose.classList.add("none");
-  btnBurgerOpen.classList.remove("none");
-  navigateHeader.classList.remove("open");
-  body.style.overflow = "auto";
-};
-
-btnBurgerOpen.addEventListener("click", openBurger);
-btnBurgerClose.addEventListener("click", closeBurger);
+headerBurgerBtn.addEventListener("click", openCloseBurgerMenu);
 
 const swiper = new Swiper(".reviews-swiper", {
   loop: true,
