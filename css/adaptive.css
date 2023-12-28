@@ -179,10 +179,6 @@
     display: none;
   }
 
-  .tabs__nav {
-    justify-content: center;
-  }
-
   .tabs__item-content {
     border-right: 1px solid #c6cbcd;
   }

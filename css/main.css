@@ -336,9 +336,6 @@ body {
 }
 
 .tabs__nav {
-  position: relative;
-  top: 1px;
-  z-index: 2;
   display: flex;
 }
 
@@ -365,6 +362,9 @@ body {
 } */
 
 .tabs__nav-btn.active {
+  position: relative;
+  z-index: 2;
+  top: 1px;
   color: #333;
   border-top: 1px solid #c6cbcd;
   border-left: 1px solid #c6cbcd;
